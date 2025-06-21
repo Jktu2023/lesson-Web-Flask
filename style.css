@@ -1,7 +1,7 @@
 .card{
    width: 1400px;
    height: 1650px;
-   background-color: burlywood;
+   background-color: LightCyan;
    border-radius: 60px;
 }
 
@@ -18,7 +18,7 @@
    height: 50%;
    font-family: 'Andale Mono', monospace;
    font-size: 50px;
-   background-color: bisque;
+   background-color: CadetBlue;
    border-radius: 20px;
 }
 
@@ -26,7 +26,7 @@ img {
     position: relative;
     padding: 20px;
     width: 400px;
-    left:30%;
+    left:0%;
     border-radius: 20px;
     transition: 1s;
 }
@@ -34,7 +34,23 @@ img:hover {
     position: relative;
     padding: 20px;
     width: 700px;
-    left:30%;
+    left:10%;
     border-radius: 20px;
     transition: 1s;
+}
+
+table {
+    border: 10px solid white; /* граница таблицы */
+    width: 5400px;             /* ширина таблицы */
+    height: 2200px;            /* высота таблицы */
+    margin-left: auto;         /* выравнивание по центру по горизонтали */
+    margin-right: auto;        /* чтобы таблица была по центру */
+}
+
+h1 {
+
+    color: Teal;          /* цвет текста */
+    font-size: 100px;     /* размер шрифта */
+    text-align: center;  /* выравнивание по центру */
+    margin-top: 300px;    /* отступ сверху   padding: 200px; */
 }
