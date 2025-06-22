@@ -11,8 +11,11 @@ body {
 
 /* Увеличить размер шрифта для элемента с классом navbar-brand */
 .navbar .navbar-brand {
-  font-size: 60px; /* замените на желаемый размер */
+  font-size: 50px; /* замените на желаемый размер */
 }
+
+
+
 
 .card{
    width: 1400px;
