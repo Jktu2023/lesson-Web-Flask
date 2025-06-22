@@ -2,17 +2,20 @@ body {
   font-size: 50px; /* или любое желаемое значение */
 }
 
-
 .navbar {
   font-size: 50px;
 }
-
-
 
 /* Увеличить размер шрифта для элемента с классом navbar-brand */
 .navbar .navbar-brand {
   font-size: 50px; /* замените на желаемый размер */
 }
+
+.footer-size {
+  font-size: 40px; /* ваш размер */
+}
+
+
 
 
 
