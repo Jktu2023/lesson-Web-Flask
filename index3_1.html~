@@ -191,7 +191,7 @@
 </footer>
 
 <!-- Подключение Bootstrap JS (нужно для карусели и аккордеона) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https - FORBIDDEN - cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoT7T1p0Ynsp1dF0s5KzEhxDc2k4h5e8B7N6O4G3r5K6k0" crossorigin="anonymous"></script>
  -->
