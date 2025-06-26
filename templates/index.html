@@ -1,65 +1,149 @@
-<!--
- Создай таблицу с рейтингом ваших любимых/нелюбимых блюд. В таблице должно быть минимум 5 рядов и 4 столбца:
-Первый столбец - название блюда;
-Второй столбец - ваша оценка от 1 до 10;
-Третий столбец - ссылка на рецепт;
-Четвертый столбец - фото блюда.
-
-В поле для ответа загрузи скриншоты сделанных заданий или ссылку на Git.
- -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Мои рецепты.</title>
+    <meta http-equiv="refresh" content="60">  <!-- Автоперезагрузка каждую секунду -->
+    <title>Главная</title>
+    <link href="static/css/style.css" rel="stylesheet" />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+      />
 </head>
 <body>
+<!-- Навигационная панель -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+  <div class="container">
+    <a class="navbar-brand" href="#">Сайт выбираю - Python!</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarMain"
+      aria-controls="navbarMain"
+      aria-expanded="false"
+      aria-label="Переключить навигацию"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page"href="/">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blog">Блог</a>
+        </li>
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" href="#">Услуги</a>-->
+<!--        </li>-->
+        <li class="nav-item">
+          <a class="nav-link" href="/contacts">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<div>
-    <table  aligh="centre" border="2px" height="1200px" width="2400px" style="font-size: 50px;">
-        <tr>
-            <th>Название блюда</th>
-            <th>Оценка от 1 до 10</th>
-            <th>Ссылка на рецепт</th>
-            <th>Фото блюда</th>
-        </tr>
-        <tr>
-            <td>Борщ</td>
-            <td> 9 </td>
-            <td> <a href="https://lifehacker.ru/classic-borshcht/"target="_blank">Рецепт борща</a>  </td>
-            <td> <img src="Pics/borsch.jpg"> </td>
-        </tr>
+<!-- Основной контент -->
+<h5>Текущее время: {{ time }}</h5>
+<h1>Главная страница</h1>
 
-        <tr>
-            <td>Плов</td>
-            <td> 8 </td>
-            <td> <a href="https://eda.ru/recepty/osnovnye-blyuda/plov-so-svininoj-43366"target="_blank">Рецепт плова</a>  </td>
-            <td> <img src="Pics/plov.png"> </td>
-        </tr>
 
-        <tr>
-            <td>Салат</td>
-            <td> 8 </td>
-            <td> <a href="https://www.edimdoma.ru/retsepty/34316-salat-iz-pomidor-i-ogurtsov-chto-mozhet-byt-novogo"target="_blank">Рецепт салата</a>  </td>
-            <td> <img src="Pics/salat.jpg"> </td>
-        </tr>
+<!-- Общая секция -->
+<section class="mb-7 mt-5">
+  <!-- Единый контейнер row -->
+  <div class="row g-4  justify-content-center" >
 
-        <tr>
-            <td>Геркулесная каша</td>
-            <td> 5 </td>
-            <td> <a href="https://food.ru/recipes/35980-gerkulesovaja-kasha-na-moloke"target="_blank">Рецепт геркулесной каши</a>  </td>
-            <td> <img src="Pics/gerkuless.png"> </td>
-        </tr>
+    <!-- data 1 -->
+    <div class="col-12 col-lg-2">
+      <div class="card">
+        <img src="static/image/Pics/data.png" class="card-img-top" alt="Ниф-Ниф">
+        <div class="card-body">
+          <h5 class="card-title">Data Processing</h5>
+          <p class="card-text">
+            Обработка данных
+          </p>
+          <a href="#" class="btn btn-primary">Подробнее...</a>
+        </div>
+      </div>
+    </div>
 
-        <tr>
-            <td>Морс</td>
-            <td> 9 </td>
-            <td> <a href="https://eda.ru/recepty/napitki/brusnichny-mors-151617"target="_blank">Рецепт морса</a>  </td>
-            <td> <img src="Pics/mors.png"> </td>
-        </tr>
-    </table>
-</div>
+    <!-- math 2 -->
+    <div class="col-12 col-lg-2">
+      <div class="card">
+        <img src="static/image/Pics/math.png" class="card-img-top" alt="Наф-Наф">
+        <div class="card-body">
+          <h5 class="card-title">Math & Stats</h5>
+          <p class="card-text">
+            Математика и статистика
+          </p>
+          <a href="#" class="btn btn-primary">Подробнее...</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- parsing 3 -->
+    <div class="col-12 col-lg-2">
+      <div class="card">
+        <img src="static/image/Pics/parsing.png" class="card-img-top" alt="Нуф-Нуф">
+        <div class="card-body">
+          <h5 class="card-title">Parsing</h5>
+          <p class="card-text">
+            Парсинг и Скрапинг
+          </p>
+          <a href="#" class="btn btn-primary">Подробнее...</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- security 4 -->
+    <div class="col-12 col-lg-2">
+      <div class="card">
+        <img src="static/image/Pics/security.png" class="card-img-top" alt="Нуф-Нуф">
+        <div class="card-body">
+          <h5 class="card-title">Security</h5>
+          <p class="card-text">
+            Security
+          </p>
+          <a href="#" class="btn btn-primary">Подробнее...</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- web 5 -->
+    <div class="col-12 col-lg-2">
+      <div class="card">
+        <img src="static/image/Pics/web.png" class="card-img-top" alt="Нуф-Нуф">
+        <div class="card-body">
+          <h5 class="card-title">Web</h5>
+          <p class="card-text">
+            Web разработка
+          </p>
+          <a href="#" class="btn btn-primary">Подробнее...</a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- Закрытие row -->
+</section> <!-- Закрытие section -->
+
+<!-- Футер с контактами и соцсетями -->
+<footer class="bg-dark text-white py-4">
+  <div class="container text-center">
+    <p>Контактная информация: email@example.com | Телефон: +7 123 456 78 90</p>
+    <p>
+      Следите за нами:
+      <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i>Facebook</a>
+      <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i>Twitter</a>
+      <a href="#" class="text-white"><i class="bi bi-instagram"></i>Instagram</a>
+    </p>
+  </div>
+</footer>
+<!-- Подключение Bootstrap JS (нужно для карусели и аккордеона) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Можно подключить иконки Bootstrap Icons для соцсетей -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 </body>
 </html>
-

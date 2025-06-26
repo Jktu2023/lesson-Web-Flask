@@ -3,29 +3,28 @@ body {
 }
 
 .navbar {
-  font-size: 50px;
+  font-size: 30px;
 }
 
 /* Увеличить размер шрифта для элемента с классом navbar-brand */
 .navbar .navbar-brand {
-  font-size: 50px; /* замените на желаемый размер */
+  font-size: 30px; /* замените на желаемый размер */
 }
 
 .footer-size {
-  font-size: 40px; /* ваш размер */
+  font-size: 20px; /* ваш размер */
+}
+footer {
+  padding-top: 3rem; /* Добавьте отступ сверху футера */
+}
+
+
+.card {
+  height: 100%;
 }
 
 
 
-
-
-
-.card{
-   width: 1400px;
-   height: 1650px;
-   background-color: LightCyan;
-   border-radius: 60px;
-}
 
 .photo {
    height: 50%;
