@@ -23,6 +23,15 @@ def index():
 @app.route("/blog")
 def blog():
         return render_template("blog.html")
+@app.route("/home")
+def home():
+    current_time = datetime.now().strftime("%H:%M")  # Получаем текущее время
+    return render_template("home.html", time=current_time)  # Передаём время в шаблон
+@app.route("/about")
+def about():
+    current_time = datetime.now().strftime("%H:%M")  # Получаем текущее время
+    return render_template("about.html", time=current_time)  # Передаём время в шаблон
+
 @app.route("/contacts")
 def contacts():
         return render_template("contacts.html")

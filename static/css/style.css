@@ -23,6 +23,21 @@ footer {
   height: 100%;
 }
 
+.img-box {
+  /* Сделаем видимую границу у контейнера */
+  border: 1px solid #000;
+
+  height: 500px;
+  /* Включаем режим отображения flex и добавляем
+  центрирование по вертикали и горизонтали */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center_text {
+  text-align: center;
+  font-size: 50px;     /* размер шрифта */
+}
 
 
 
